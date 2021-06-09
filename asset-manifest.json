@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/popular-video-player/static/js/main.a691f6cb.chunk.js",
-    "main.js.map": "/popular-video-player/static/js/main.a691f6cb.chunk.js.map",
+    "main.js": "/popular-video-player/static/js/main.b657c643.chunk.js",
+    "main.js.map": "/popular-video-player/static/js/main.b657c643.chunk.js.map",
     "runtime-main.js": "/popular-video-player/static/js/runtime-main.beaa2431.js",
     "runtime-main.js.map": "/popular-video-player/static/js/runtime-main.beaa2431.js.map",
     "static/js/2.bcc51cea.chunk.js": "/popular-video-player/static/js/2.bcc51cea.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.beaa2431.js",
     "static/js/2.bcc51cea.chunk.js",
-    "static/js/main.a691f6cb.chunk.js"
+    "static/js/main.b657c643.chunk.js"
   ]
 }
