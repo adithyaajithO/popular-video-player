@@ -19,7 +19,7 @@ const Routes = () => (
             path='/video-play/:id'
             render={params => <VideoPlay {...params} />}
         />
-        <Redirect from='/' to='/video-list' />
+        <Redirect to='/video-list' />
     </AnimatedSwitch>
 );
 
