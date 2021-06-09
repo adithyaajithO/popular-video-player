@@ -23,7 +23,7 @@ const App = ({ basename }) => {
   return (
     <ThemeProvider theme={theme} >
       <BrowserRouter basename={basename}>
-        <Routes />
+        <Routes basename={basename} />
       </BrowserRouter>
     </ThemeProvider>
   );

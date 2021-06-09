@@ -3,7 +3,8 @@ import { AnimatedSwitch } from 'react-router-transition';
 import VideoList from './screens/VideoList';
 import VideoPlay from './screens/VideoPlay';
 
-const Routes = () => (
+const Routes = ({ basename }) => (
+    console.log(basename),
     <AnimatedSwitch
         atEnter={{ offset: -100 }}
         atLeave={{ offset: -100 }}
@@ -19,7 +20,7 @@ const Routes = () => (
             path='/video-play/:id'
             render={params => <VideoPlay {...params} />}
         />
-        <Redirect to='/video-list' />
+        <Redirect from='/' to='/video-list' />
     </AnimatedSwitch>
 );
 
