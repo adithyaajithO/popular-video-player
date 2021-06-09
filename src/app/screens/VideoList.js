@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
         width: '50% !important',
         margin: 'auto'
     }, toolBar: {
-        padding: `${theme.spacing(2)}px 0 0 ${theme.spacing(5)}px`
+        padding: `${theme.spacing(2)}px 0 0 0`
     }
 }));
 
@@ -44,6 +44,7 @@ const VideoList = ({
         <div>
             <LoadingSpinner open={loading} />
             <Grid container className={classes.toolBar}>
+                <Grid item xs={3} />
                 <Grid item xs={6}>
                     <SearchBar
                         searchPhrase={searchPhrase}
@@ -71,7 +72,7 @@ const VideoList = ({
                     <Grid
                         key={indx}
                         item xs={12}
-                        onClick={() => setId(el)} 
+                        onClick={() => setId(el)}
                     >
                         <div className={classes.videoContainer}>
                             <VideoPlayer

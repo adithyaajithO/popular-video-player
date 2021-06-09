@@ -48,7 +48,7 @@ const VideoPlayer = ({
                 setLight(true);
             }}
         />
-        <Typography className={classes.title} variant='subtitle1' component='p'>
+        <Typography className={classes.title} variant='h6' component='h6'>
             {videoTitle}
         </Typography>
     </div>;

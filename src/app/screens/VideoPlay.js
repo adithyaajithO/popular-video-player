@@ -31,7 +31,8 @@ const useStyles = makeStyles(theme => ({
         width: '30% !important',
         display: 'flex',
         justifyContent: 'flex-end',
-        alignItems: 'center'
+        alignItems: 'center',
+        padding: `${theme.spacing(3)}px 0 0 0`
     }
 }));
 
@@ -79,24 +80,28 @@ const VideoPlay = ({
         <div key={id}>
             <LoadingSpinner open={loading} />
             <div className={classes.videoGroup}>
-                <div>
-                    <div className={classes.videoContainer}>
-                        <VideoPlayer
-                            id={id}
-                            setLoading={setLoading}
-                        />
-                    </div>
+                <div className={classes.videoContainer}>
+                    <VideoPlayer
+                        id={id}
+                        setLoading={setLoading}
+                    />
                 </div>
             </div>
             <Grid container spacing={3} className={classes.buttonGroup}>
                 <Grid item xs={4}>
-                    <ActionButton icon={ThumbUpOutlinedIcon} />
+                    <ActionButton
+                        icon={ThumbUpOutlinedIcon}
+                    />
                 </Grid>
                 <Grid item xs={4}>
-                    <ActionButton icon={ThumbDownOutlinedIcon} />
+                    <ActionButton
+                        icon={ThumbDownOutlinedIcon}
+                    />
                 </Grid>
                 <Grid item xs={4}>
-                    <ActionButton icon={ShareOutlinedIcon} />
+                    <ActionButton
+                        icon={ShareOutlinedIcon}
+                    />
                 </Grid>
             </Grid>
             <div className={classes.chipContainer}>

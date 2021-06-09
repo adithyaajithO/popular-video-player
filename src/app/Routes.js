@@ -3,8 +3,7 @@ import { AnimatedSwitch } from 'react-router-transition';
 import VideoList from './screens/VideoList';
 import VideoPlay from './screens/VideoPlay';
 
-const Routes = ({ basename }) => (
-    console.log(basename),
+const Routes = () => (
     <AnimatedSwitch
         atEnter={{ offset: -100 }}
         atLeave={{ offset: -100 }}

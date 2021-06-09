@@ -16,6 +16,13 @@ const App = ({ basename }) => {
         main: '#606060'
       },
     },
+    typography: {
+      h6: {
+        '@media (max-width:600px)': {
+          fontSize: '0.75rem',
+        },
+      }
+    }
   });
 
   theme = responsiveFontSizes(theme);
@@ -23,7 +30,7 @@ const App = ({ basename }) => {
   return (
     <ThemeProvider theme={theme} >
       <BrowserRouter basename={basename}>
-        <Routes basename={basename} />
+        <Routes />
       </BrowserRouter>
     </ThemeProvider>
   );
